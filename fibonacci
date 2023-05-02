@@ -1,0 +1,10 @@
+Write a Python Program for Fibonacci numbers.
+n = int(input("Enter the number of Fibonacci numbers to generate: "))
+for i in range(n):
+    print(fibonacci(i))
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
